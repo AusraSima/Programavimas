@@ -10,7 +10,7 @@ namespace _02uzduotis
             Console.WriteLine("|                   |");
             Console.WriteLine("|                   |");
             Console.WriteLine("|    Mano vardas    |");
-            Console.WriteLine("|      Martynas     |");
+            Console.WriteLine("|       Ausra       |");
             Console.WriteLine("|                   |");
             Console.WriteLine("|                   |");
             Console.WriteLine("---------------------");
