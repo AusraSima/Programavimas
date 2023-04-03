@@ -18,8 +18,6 @@ namespace Uzduotis09
             double skaicius = Convert.ToDouble(Console.ReadLine());
             if (skaicius < 0)
                 Console.WriteLine("Blogai!");
-            else
-                Console.WriteLine("Sveikinu, gerai!");
             if (skaicius % 2 == 0)
                 Console.WriteLine("Taip, skaicius yra lyginis");
             if (skaicius % 4 == 0)
