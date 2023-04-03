@@ -8,14 +8,13 @@ namespace Uzduotis07
         {
             //Vardo ir amžiaus įvedimas
             Console.Write("Iveskite savo varda: ");
-            string ivedimas = Console.ReadLine();
-            Console.WriteLine(ivedimas);
+            string vardas = Console.ReadLine();
             Console.Write("Ieskite savo amziu: ");
-            ivedimas = Console.ReadLine();
-            Console.WriteLine(ivedimas);
+            int amzius = Convert.ToInt32(Console.ReadLine()); 
+            Console.Write($"Jusu vardas {vardas}, o amzius {amzius}.");
             Console.WriteLine();
 
-            //Kvadratas iš simbolio
+            Kvadratas iš simbolio
             Console.Write("Iveskite simboli: ");
             string simbolis = Console.ReadLine();
             Console.WriteLine($"{simbolis}{simbolis}{simbolis}\n{simbolis} {simbolis} \n{simbolis}{simbolis}{simbolis}");
@@ -34,7 +33,7 @@ namespace Uzduotis07
             int y = Convert.ToInt32(Console.ReadLine());
             Console.Write("Iveskite skaičių z: ");
             int z = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"{x} + {y} + {z} = {x + y +z}");
+            Console.WriteLine($"{x} + {y} + {z} = {x + y + z}");
             Console.WriteLine();
         }
     }
