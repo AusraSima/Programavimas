@@ -14,7 +14,7 @@ namespace Uzduotis07
             Console.Write($"Jusu vardas {vardas}, o amzius {amzius}.");
             Console.WriteLine();
 
-            Kvadratas iš simbolio
+            //Kvadratas iš simbolio
             Console.Write("Iveskite simboli: ");
             string simbolis = Console.ReadLine();
             Console.WriteLine($"{simbolis}{simbolis}{simbolis}\n{simbolis} {simbolis} \n{simbolis}{simbolis}{simbolis}");
