@@ -59,6 +59,7 @@ namespace Uzduotis21
             Console.WriteLine(masyvasMasinos.First());
             Console.WriteLine(masyvasMasinos.Last());
             Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
