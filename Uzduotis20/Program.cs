@@ -11,7 +11,7 @@ namespace Uzduotis20
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Iveskite staciojo trikampio antrojo statinio ilgi b: ");
             int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Izambines ilgis {Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2))}");
+            Console.WriteLine($"Trikampio iambines ilgis yra {Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2))}");
             Console.WriteLine();
         }
     }
