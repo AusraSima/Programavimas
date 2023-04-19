@@ -64,6 +64,49 @@ namespace Uzduotis22
             }
             Console.WriteLine($"Temperaturu didesniu uz vidurki kiekis yra: {kiekisdaugiauvidurkio}");
             Console.WriteLine();
+
+            /*Sukurti pažymių masyvą.  Rasti : geriausią pažymį, kiek mokinių yra gavę dešimtukus,
+             * kiek mokinių yra gavę neigiamą pažymį (žemiau nei 4), pažymių vidurkį.
+             */
+
+            int[] pazymiuMasyvas = new int[] { 9, 6, 3, 10, 8, 5, 9, 10, 7, 6, 8};
+            int maxpazymys = pazymiuMasyvas[0];
+            for (int i = 0; i < pazymiuMasyvas.Length; i++)
+            {
+                if (pazymiuMasyvas[i] > maxpazymys)
+                {
+                    maxpazymys = pazymiuMasyvas[i];
+                }
+            }
+            Console.WriteLine($"Geriausias pazymys yra: {maxpazymys}");
+            Console.WriteLine();
+
+            int desimtukininkai = 0;
+            for (int i = 0; i < pazymiuMasyvas.Length; i++)
+            {
+                if (pazymiuMasyvas[i] == 10)
+                {
+                    desimtukininkai++;
+                }
+            }
+            Console.WriteLine($"Desimtukus gavusiu mokiniu skaicius yra {desimtukininkai}");
+            Console.WriteLine();
+
+            int nepazangus = 0;
+            for (int i = 0; i < pazymiuMasyvas.Length; i++)
+            {
+                if (pazymiuMasyvas[i] < 4)
+                {
+                    nepazangus++;
+                }
+            }
+            Console.WriteLine($"Neigiamus pazymius gavusiu mokiniu skaicius yra {nepazangus}");
+            Console.WriteLine();
+
+            int pazymiuvidurkis = pazymiuMasyvas.Sum();
+            pazymiuvidurkis = pazymiuvidurkis / pazymiuMasyvas.Length;
+            Console.WriteLine($"Pazymiu vidurkis lygus: {pazymiuvidurkis}");
+            Console.WriteLine();
         }
     }
 }
