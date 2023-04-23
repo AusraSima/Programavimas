@@ -49,6 +49,30 @@ namespace Uzduotis_26
             }
             Console.WriteLine($"Sarase yra {maziauUzVidurki} skaiciai, mazesni uz vidurki");
             Console.WriteLine($"Saraso lyginiu skaiciu suma yra lygi {lyginiuSkaicius}");
+            Console.WriteLine();
+
+            /*Vartotojui reikia pasirinkti, kiek studentu pazymiu noris suvesti i sarasa.
+             * Sarasa reikia uzpildyti duomenimis, juos suvedant per konsole. Rasti:
+             * didziausia pazymi, maziausia pzymi, vidurki.
+             */
+
+            List<int> pazymiai = new List<int>();
+            Console.WriteLine("Pasirinkite, kiek pazymiu norite ivesti i sarasa: ");
+            int kiekis = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < kiekis; i++)
+            {
+                Console.Write("Iveskite pazymi: ");
+                pazymiai.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            foreach (int pazymys in pazymiai) 
+            {
+                Console.WriteLine(pazymys);
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Diziausias pazymys yra {pazymiai.Max()}");
+            Console.WriteLine($"Maziausias pazymys yra {pazymiai.Min()}");
+            Console.WriteLine($"Pazymiu vidurkis yra {pazymiai.Average()}");
+            Console.WriteLine();
         }
     }
 }
