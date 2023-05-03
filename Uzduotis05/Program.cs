@@ -27,8 +27,6 @@ namespace Uzduotis05
 
             //Triju skaiciu sandauga
             Console.WriteLine($"{x} * {y} * {z} = {x * y * z}");
-            Console.WriteLine();
-
         }
     }
 }
